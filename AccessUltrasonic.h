@@ -1,7 +1,7 @@
 #ifndef ACCESS_ULTRASONIC_H
 #define ACCESS_ULTRASONIC_H
 
-void helperFunction();
-int add(int a, int b);
+float fireUltrasound();
+void configurePins(int TriggerPin, int EchoPin);
 
 #endif

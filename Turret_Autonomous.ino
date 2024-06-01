@@ -1,7 +1,9 @@
 #include <Servo.h>
-#include <AccessUltrasonic.ino>
+#include <AccessUltrasonic.h>
 
-#define laserPin 53
+#define LASER_PIN 53
+#define ULTRA_TRIG_PIN 61
+#define ULTRA_ECHO_PIN 62
 
 Servo rotor_ESC;
 Servo feed_ESC;
@@ -10,8 +12,6 @@ Servo tilt_ESC;
 
 int rotorPower = 0;
 int prevRotorPower = 0; 
-
-int motionDetectorPin = ;
 
 void setup() {
   
@@ -24,7 +24,6 @@ void setup() {
 }
 
 void loop() {
-  fireWaves();
   
 }
 
